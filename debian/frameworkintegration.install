@@ -1,0 +1,5 @@
+usr/lib/*/libexec/kf5/kpackagehandlers/appstreamhandler
+usr/lib/*/libexec/kf5/kpackagehandlers/knshandler
+usr/lib/*/qt5/plugins/kf5/FrameworkIntegrationPlugin.so
+usr/share/kf5/infopage/
+usr/share/knotifications5/plasma_workspace.notifyrc
