@@ -1,3 +1,25 @@
+frameworkintegration (5.90.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.89.0).
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.90.0).
+  * Added myself to the uploaders.
+  * Backport upstream commit to fix broken installation of KDE New Stuff
+    having dependencies.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 11 Feb 2022 23:46:45 +0100
+
+frameworkintegration (5.88.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.87.0).
+  * New upstream release (5.88.0).
+  * Force-bump frameworks internal b-d to 5.88.
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 17 Nov 2021 06:07:37 +0900
+
 frameworkintegration (5.86.0-1) unstable; urgency=medium
 
   [ Norbert Preining ]
