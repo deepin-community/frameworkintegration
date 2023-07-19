@@ -7,16 +7,16 @@ Uploaders: Aurélien COUDERC <coucouf@debian.org>,
 Build-Depends: cmake (>= 3.16~),
                dbus-x11,
                debhelper-compat (= 13),
-               extra-cmake-modules (>= 5.90.0~),
+               extra-cmake-modules (>= 5.103.0~),
                libappstreamqt-dev (>= 0.10.4~),
-               libkf5config-dev (>= 5.90.0~),
-               libkf5configwidgets-dev (>= 5.90.0~),
-               libkf5i18n-dev (>= 5.90.0~),
-               libkf5iconthemes-dev (>= 5.90.0~),
-               libkf5newstuff-dev (>= 5.90.0~),
-               libkf5notifications-dev (>= 5.90.0~),
-               libkf5package-dev (>= 5.90.0~),
-               libkf5widgetsaddons-dev (>= 5.90.0~),
+               libkf5config-dev (>= 5.103.0~),
+               libkf5configwidgets-dev (>= 5.103.0~),
+               libkf5i18n-dev (>= 5.103.0~),
+               libkf5iconthemes-dev (>= 5.103.0~),
+               libkf5newstuff-dev (>= 5.103.0~),
+               libkf5notifications-dev (>= 5.103.0~),
+               libkf5package-dev (>= 5.103.0~),
+               libkf5widgetsaddons-dev (>= 5.103.0~),
                libpackagekitqt5-dev,
                libqt5widgets5,
                libqt5x11extras5-dev (>= 5.11.0~),
@@ -25,7 +25,7 @@ Build-Depends: cmake (>= 3.16~),
                pkg-kde-tools (>= 0.15.15ubuntu1~),
                qtbase5-dev (>= 5.15.2~),
                qtbase5-private-dev,
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 Homepage: https://invent.kde.org/frameworks/frameworkintegration
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/frameworkintegration
 Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/frameworkintegration.git
@@ -33,12 +33,12 @@ Rules-Requires-Root: no
 
 Package: frameworkintegration
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends},
 Breaks: kf5-infopage,
         kf5-integrationplugin,
         kf5-platformtheme,
         plasma-workspace (<< 4:5.6.0~),
-Replaces: kf5-infopage, kf5-integrationplugin, kf5-platformtheme
+Replaces: kf5-infopage, kf5-integrationplugin, kf5-platformtheme,
 Description: KF5 cross-framework integration plugins
  Framework Integration is a set of plugins responsible
  for better integration of Qt applications when running
@@ -47,8 +47,8 @@ Description: KF5 cross-framework integration plugins
 Package: libkf5style-dev
 Section: libdevel
 Architecture: any
-Depends: libkf5configwidgets-dev (>= 5.90.0~),
-         libkf5iconthemes-dev (>= 5.90.0~),
+Depends: libkf5configwidgets-dev (>= 5.103.0~),
+         libkf5iconthemes-dev (>= 5.103.0~),
          libkf5style5 (= ${binary:Version}),
          ${misc:Depends},
 Description: KF5 cross-framework integration plugins - KStyle
@@ -66,12 +66,12 @@ Description: KF5 cross-framework integration plugins - KStyle
  and the use of standard themed icons.
  .
  This package provides the development files.
-Breaks: libkf5kdelibs4support-dev (<< 5.54)
+Breaks: libkf5kdelibs4support-dev (<< 5.54),
 
 Package: libkf5style5
 Architecture: any
 Multi-Arch: same
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends},
 Description: KF5 cross-framework integration plugins - KStyle
  Framework Integration is a set of plugins responsible
  for better integration of Qt applications when running
