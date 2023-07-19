@@ -1,4 +1,4 @@
+usr/include/KF5/FrameworkIntegration/
 usr/include/KF5/KStyle/
-usr/include/KF5/frameworkintegration_version.h
 usr/lib/*/cmake/KF5FrameworkIntegration/
 usr/lib/*/libKF5Style.so
